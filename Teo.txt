@@ -1,0 +1,35 @@
+5/3/2019
+
+Libro de apuntes en uhu.es/jose.carpio publicaciones -> programación declarativa
+
+Github en cmd:
+git clone dir_carpeta_online => bajar
+git add nombre_archivo (ó . para todos) ¯|
+git commit -a -m "Texto descriptivo"	 |-> subir
+git push origin master			_|
+git pull => actualizar
+
+
+    Si x    ->     y		<= Regla lógica
+antecedente -> consecuente
+
+Prolog(7.6.4)=> consecuente : antecedente
+Tiene algoritmo de resolución. Archivos .pl
+Comandos:
+	listing. => muestra todo el programa
+	____. => para preguntar. Si es falso aparece como Error
+
+Clausulas de Horn (& = < pa abajo, | = < pa arriba): a & b & ... -> c
+	No Horn a Horn: a -> b & c => a->b, a->c
+			a | b -> c => a->c, b->c
+			a -> b | c => No se puede
+
+12/3/2019
+En una línea separamos con ',' distintas expresiones
+Las variables solo están definidas en la expresión en la que se utilizan
+
+-Principio de inducción: Sea P una propiedad que quiero probar para todo elemento de un
+conjunto S, con S ordenable y existe un primer elemento n0:
+	1. P(n0) es cierto
+	2. Para todo n>n0 perteneciente a S
+		P(n-1) -> P(n)
