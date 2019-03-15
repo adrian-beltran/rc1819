@@ -13,7 +13,7 @@ git pull => actualizar
     Si x    ->     y		<= Regla lógica
 antecedente -> consecuente
 
-Prolog(7.6.4)=> consecuente : antecedente
+Prolog(7.6.4)=> consecuente :- antecedente
 Tiene algoritmo de resolución. Archivos .pl
 Comandos:
 	listing. => muestra todo el programa
