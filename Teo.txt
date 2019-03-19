@@ -6,7 +6,7 @@ Github en cmd:
 git clone dir_carpeta_online => bajar
 git add nombre_archivo (ó . para todos) ¯|
 git commit -a -m "Texto descriptivo"	 |-> subir
-git push origin master			_|
+git push origin master					_|
 git pull => actualizar
 
 
@@ -33,3 +33,24 @@ conjunto S, con S ordenable y existe un primer elemento n0:
 	1. P(n0) es cierto
 	2. Para todo n>n0 perteneciente a S
 		P(n-1) -> P(n)
+		
+19/3/2019
+-Algunos predicados predefinidos para listas:
+	append concatena dos listas
+	member comprueba si un elemento es miembro
+	reverse da la vuelta
+	nth0 y nth1 devuelve el elemento enesimo empezando por 0 o 1
+	**buscar ayuda con help(___).
+
+-Predicados reversibles:
+Ejemplo: coger los 5 primero y ultimos elementos de una lista 
+	length(L1, 5), append(L1, L2, [1,2,3,4,5,6,7,8]).
+	length(L2, 5), append(L1, L2, [1,2,3,4,5,6,7,8]).
+Ejemplo: coger dos elementos consecutivos de una lista cualesean
+	append(L1, [E1,E2|R], [1,2,3,4,5]).
+	**Con ";" podemos ver si hay más soluciones posibles
+	
+Activar el depurador (no muy recomendable)
+	guitracer.
+	trace.
+	*cosa a depurar.
