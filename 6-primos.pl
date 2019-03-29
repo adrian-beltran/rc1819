@@ -23,16 +23,16 @@ primo(X) :- divisores(X, [X,1]).
 % que dividen a X (resto de la division es igual a 0)
 
 divisores(X, R) :- divisores(X, X, R).
-%divisores(X, [Ca|Resto]) :- 0 is X mod Ca, divisores(X, Resto).
+% divisores(X, [Ca|Resto]) :- 0 is X mod Ca, divisores(X, Resto).
 
 % divisores(+X, +Y, -ListaDivisores)
 % es cierto si ListaDivisores unifica con los divisores de X que van desde 1 hasta Y
 divisores(_, 1, [1]).
 divisores(X, Y, [Y|R]) :- Y2 is Y - 1, 
 	Y > 1,
-	divisores(X, Y2, R), 
-	0 is X mod Y.
+	0 is X mod Y,
+	divisores(X, Y2, R).
 divisores(X, Y, R) :- Y2 is Y - 1,
 	Y > 1,
-	divisores(X, Y2, R),
-	Resto is X mod Y, Resto \= 0.
+	Resto is X mod Y, Resto \= 0,
+	divisores(X, Y2, R).
