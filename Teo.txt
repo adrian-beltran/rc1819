@@ -54,3 +54,6 @@ Activar el depurador (no muy recomendable)
 	guitracer.
 	trace.
 	*cosa a depurar.
+	
+Para contar cuantas soluciones obtienes con un predicado
+	bagof("predicado").
