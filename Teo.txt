@@ -57,3 +57,7 @@ Activar el depurador (no muy recomendable)
 	
 Para contar cuantas soluciones obtienes con un predicado
 	bagof("predicado").
+	
+Para que muestre la lista de la solución completa
+	aunque sea muy larga (en vez de "...")
+	____, write(R).
