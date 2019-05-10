@@ -61,3 +61,24 @@ Para contar cuantas soluciones obtienes con un predicado
 Para que muestre la lista de la solución completa
 	aunque sea muy larga (en vez de "...")
 	____, write(R).
+	
+	
+****	ARBOLES		****
+
+En prolog: t(etiqueta, hijo left, hijo derecho)
+	Con 'nil' indicamos que un hijo es vacío
+	'nil' representa en sí mismo a un árbol
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
