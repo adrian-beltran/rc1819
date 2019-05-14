@@ -70,7 +70,11 @@ En prolog: t(etiqueta, hijo left, hijo derecho)
 	'nil' representa en sí mismo a un árbol
 	
 	
+**** ARBOLES GENERICOS ****
 	
+En prolog: t(etiqueta, lista_hijos)
+	t(etiqueta, [t(et1,[]),t(et1,[]),t(et3,[])])
+	[] indica un árbol sin hijos, no existe árbol nulo
 	
 	
 	
