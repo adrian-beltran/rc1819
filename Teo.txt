@@ -77,6 +77,11 @@ En prolog: t(etiqueta, lista_hijos)
 	[] indica un árbol sin hijos, no existe árbol nulo
 	
 	
+**** PROBLEMAS DE ESTADO ****
+1. Representación del estado
+2. Representación de los movimientos
+3. Crear el camino
+	
 	
 	
 	
